@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+QClientSocket	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^QClientSocket::QClientSocket()$/;"	function	line:4	class:QClientSocket	signature:()
+run_timer_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_timer_pthread(void *ptr)$/;"	function	line:58	class:QClientSocket	signature:(void *ptr)
+connect_server	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::connect_server(char *ip,int port)$/;"	function	line:115	class:QClientSocket	signature:(char *ip,int port)
+start	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start()$/;"	function	line:239	class:QClientSocket	signature:()
+set_protocol_ack_callback	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::set_protocol_ack_callback(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))$/;"	function	line:249	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))
+search_subcmd_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^struct sub_cmd_link_t *QClientSocket::search_subcmd_node(u16 cmd_type,u32 sub_cmd_type)$/;"	function	line:256	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type)
+append_cmd_link_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::append_cmd_link_node(u16 cmd_type)$/;"	function	line:281	class:QClientSocket	signature:(u16 cmd_type)
+search_subcmd_head	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^struct sub_cmd_link_t *QClientSocket::search_subcmd_head(u16 cmd_type)$/;"	function	line:319	class:QClientSocket	signature:(u16 cmd_type)
+append_subcmd_link_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::append_subcmd_link_node(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))$/;"	function	line:343	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))
+send_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::send_protocol(u16 cmd_type,u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:379	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,char *data,u32 len)
+do_ctrl_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_ctrl_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:408	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+do_file_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_file_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:442	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+do_aid_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_aid_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:471	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+do_vid_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_vid_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:478	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+run_send_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_send_pthread(void *ptr)$/;"	function	line:488	class:QClientSocket	signature:(void *ptr)
+run_recv_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_recv_pthread(void *ptr)$/;"	function	line:516	class:QClientSocket	signature:(void *ptr)
+run_treasmit_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_treasmit_pthread(void *ptr)$/;"	function	line:544	class:QClientSocket	signature:(void *ptr)
+WRITE	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::WRITE(int sk, char *buf, int len)$/;"	function	line:577	class:QClientSocket	signature:(int sk, char *buf, int len)
+READ	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::READ(int sk, char *buf, int len)$/;"	function	line:597	class:QClientSocket	signature:(int sk, char *buf, int len)
+start_recv	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_recv()$/;"	function	line:620	class:QClientSocket	signature:()
+start_send	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_send()$/;"	function	line:628	class:QClientSocket	signature:()
+start_treasmit	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_treasmit()$/;"	function	line:636	class:QClientSocket	signature:()
+start_heart	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_heart()$/;"	function	line:647	class:QClientSocket	signature:()
+stop_heart	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::stop_heart()$/;"	function	line:661	class:QClientSocket	signature:()

@@ -1,0 +1,11 @@
+1) 从网络接受到的数据放入接受缓冲区:recv_buffer,接受线程:run_recv_pthread();
+2) 用户添加的协议放在发送缓冲区:send_buffer,用户通过send_protocol(u16 cmd_type,u32 sub_cmd_type,char *data,u32 len)
+进行设置，其中u16 cmd_type u32 sub_cmd_type为协议的主、次命令字，data为发送的内容(不含头),len为内容长度(不含头)；
+3) 发送线程为run_send_pthread();
+4) 接受到的ack数据，由run_treasmit_pthread()进行解析，解析通过回调数通知应用程；
+   struct sub_cmd_link_t *subcmd_node = pthis->search_subcmd_node(cmd_type,sub_cmd_type);
+   if(subcmd_node->callback != NULL)
+       subcmd_node->callback(buffer+NET_HEAD_SIZE,len - NET_HEAD_SIZE);
+5) 启动心跳start_heart();
+6) 用户设置协议的应答的回调函数：
+   set_protocol_ack_callback(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len)); 
