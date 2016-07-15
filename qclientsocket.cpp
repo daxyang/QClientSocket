@@ -50,65 +50,7 @@ QClientSocket::QClientSocket()
   set_protocol_ack_callback(NET_TCP_TYPE_FILE,NET_FILE_PATH,NULL);
   set_protocol_ack_callback(NET_TCP_TYPE_FILE,NET_FILE_LIST,NULL);
 }
-/*
- * 定时器处理函数
- *    发送心跳包
- */
 
-void *QClientSocket::run_timer_pthread(void *ptr)
-{
-  QClientSocket *pthis = (QClientSocket *)ptr;
-  int i = 0;
-  while(pthis->quite == 0)
-  {
-
-    time_t timep;
-    time(&timep);
-    struct tm *ptime;
-    ptime = localtime(&timep);
-
-    u32 len = sizeof(app_net_ctrl_heart);
-    char *buffer = (char *)malloc(sizeof(char) * len);
-    app_net_ctrl_heart *heart = (app_net_ctrl_heart *)buffer;
-    heart->yy = htons(1900+ptime->tm_year);
-    heart->MM = ptime->tm_mon;
-    heart->dd = ptime->tm_mday;
-    heart->hh = ptime->tm_hour;
-    heart->mm = ptime->tm_min;
-    heart->ss = ptime->tm_sec;
-  //  pthis->send_protocol(NET_TCP_TYPE_CTRL,NET_CTRL_HEART,buffer,len);
-    //pthis->itimer_cnt = 0;
-    printf("==heart:%d:%d:%d\n",heart->hh,heart->mm,heart->ss);
-      select(0,NULL,NULL,NULL,&pthis->timer);
-    //  if(pthis->send_consume->IsEmpty() == 1)
-    //  if(pthis->itimer_cnt >= 5000)
-      {
-        time_t timep;
-        time(&timep);
-        struct tm *ptime;
-        ptime = localtime(&timep);
-
-        u32 len = sizeof(app_net_ctrl_heart);
-        char *buffer = (char *)malloc(sizeof(char) * len);
-        app_net_ctrl_heart *heart = (app_net_ctrl_heart *)buffer;
-        heart->yy = htons(1900+ptime->tm_year);
-        heart->MM = ptime->tm_mon;
-        heart->dd = ptime->tm_mday;
-        heart->hh = ptime->tm_hour;
-        heart->mm = ptime->tm_min;
-        heart->ss = ptime->tm_sec;
-        pthis->send_protocol(NET_TCP_TYPE_CTRL,NET_CTRL_HEART,buffer,len);
-        //pthis->itimer_cnt = 0;
-        printf("heart:%d:%d:%d\n",heart->hh,heart->mm,heart->ss);
-      }
-      //pthis->itimer_cnt++;
-      //i++;
-      //printf("timer i:%d\n",i);
-    //  else
-    //    printf("no insert heart\n");
-
-  }
-}
 /*
  * 连接服务器
  */
@@ -490,16 +432,50 @@ void *QClientSocket::run_send_pthread(void *ptr)
   QClientSocket *pthis = (QClientSocket *)ptr;
   pthis->send_consume->read_init();
   char *buffer = (char *)malloc(sizeof(char) * PROTOCOL_BUFFER_LEN);
-
+  int time_cnt = 0;
+  int err;
   while(1)
   {
-    int len = pthis->send_consume->read_data_to_buffer(buffer);
+    int len = pthis->send_consume->read_data_to_buffer(buffer,0);  //使用非阻塞模式读数据
     if(len > 0)
     {
       pthis->WRITE(pthis->client_socket,buffer,len);
+      time_cnt = 0;
+    }
+    else  /*add by antony 2016-7-15 send heart package*/
+    {
+      struct timeval tv;
+      tv.tv_sec = 0;
+      tv.tv_usec = 90000; //100mS
+      do{
+        //  pthread_yield_np();
+          err = select(0,NULL,NULL,NULL,&tv);
+        }while(err<0 && errno == EINTR);
+
+      time_cnt++;
+      if(time_cnt >= 30)
+      {
+        time_cnt = 0;
+        time_t timep;
+        time(&timep);
+        struct tm *ptime;
+        ptime = localtime(&timep);
+
+        u32 len = sizeof(app_net_ctrl_heart);
+        char *buffer = (char *)malloc(sizeof(char) * len);
+        app_net_ctrl_heart *heart = (app_net_ctrl_heart *)buffer;
+        heart->yy = htons(1900+ptime->tm_year);
+        heart->MM = ptime->tm_mon;
+        heart->dd = ptime->tm_mday;
+        heart->hh = ptime->tm_hour;
+        heart->mm = ptime->tm_min;
+        heart->ss = ptime->tm_sec;
+        pthis->send_protocol(NET_TCP_TYPE_CTRL,NET_CTRL_HEART,buffer,len);
+          //pthis->itimer_cnt = 0;
+       printf("heart:%d:%d:%d\n",heart->hh,heart->mm,heart->ss);
     }
 
-
+  }
 #if defined(Q_OS_WIN32)
           usleep(1000);
 #elif defined(Q_OS_MACX)
@@ -640,25 +616,4 @@ void QClientSocket::start_treasmit()
   pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
   pthread_create(&treasmit_pthread_id,&attr,run_treasmit_pthread,this);
   pthread_attr_destroy (&attr);
-}
-/*
- * 启动心跳包
- */
-void QClientSocket::start_heart()
-{
-
-  timer.tv_sec = 1;
-  timer.tv_usec = 0;  //1mS
-  quite = 0;
-  itimer_cnt = 0;
-  pthread_attr_t attr;
-  pthread_attr_init (&attr);
-  pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
-  pthread_create(&timer_pthread_id,&attr,run_timer_pthread,this);
-  pthread_attr_destroy (&attr);
-
-}
-void QClientSocket::stop_heart()
-{
-  quite = 1;
 }

@@ -1,152 +1,48 @@
-!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
-!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
-NET_PROROCAL	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_PROROCAL$/;"	macro	line:2
-HELLO_WORLD_SERVER_PORT	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define HELLO_WORLD_SERVER_PORT /;"	macro	line:18
-LENGTH_OF_LISTEN_QUEUE	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define LENGTH_OF_LISTEN_QUEUE /;"	macro	line:19
-TIMEOUT	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define TIMEOUT /;"	macro	line:21
-u8	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^typedef unsigned char       u8;$/;"	typedef	line:23
-u16	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^typedef unsigned short      u16;$/;"	typedef	line:24
-u32	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^typedef unsigned int         u32;$/;"	typedef	line:25
-u64	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^typedef  unsigned long long u64;$/;"	typedef	line:26
-NET_TCP_TYPE_CTRL	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_TCP_TYPE_CTRL /;"	macro	line:28
-NET_TCP_TYPE_FILE	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_TCP_TYPE_FILE /;"	macro	line:29
-NET_TCP_TYPE_VID	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_TCP_TYPE_VID /;"	macro	line:30
-NET_TCP_TYPE_AID	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_TCP_TYPE_AID /;"	macro	line:31
-NET_CTRL_LOGIN	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_CTRL_LOGIN /;"	macro	line:34
-NET_CTRL_LOGOUT	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_CTRL_LOGOUT /;"	macro	line:35
-NET_CTRL_HEART	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_CTRL_HEART /;"	macro	line:36
-NET_FILE_LIST	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_FILE_LIST /;"	macro	line:38
-NET_FILE_START	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_FILE_START /;"	macro	line:39
-NET_FILE_PATH	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_FILE_PATH /;"	macro	line:40
-NET_FILE_SEND	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_FILE_SEND /;"	macro	line:41
-app_net_head_pkg_t	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^typedef struct app_net_head_pkg_t$/;"	struct	line:44
-Margin	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    char Margin[4];  \/\/4$/;"	member	line:46	struct:app_net_head_pkg_t
-Length	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u32 Length;  \/\/4$/;"	member	line:47	struct:app_net_head_pkg_t
-CmdType	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u16 CmdType;  \/\/2$/;"	member	line:48	struct:app_net_head_pkg_t
-Version	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u16 Version;  \/\/2$/;"	member	line:49	struct:app_net_head_pkg_t
-CmdSubType	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u32 CmdSubType;  \/\/4$/;"	member	line:50	struct:app_net_head_pkg_t
-Hardware	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u32 Hardware;  \/\/2$/;"	member	line:51	struct:app_net_head_pkg_t
-DataType	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u32 DataType; \/\/2$/;"	member	line:52	struct:app_net_head_pkg_t
-Sn	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u64 Sn;  \/\/8$/;"	member	line:53	struct:app_net_head_pkg_t
-Rev1	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u16 Rev1;  \/\/2$/;"	member	line:54	struct:app_net_head_pkg_t
-Rev2	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u16 Rev2; \/\/2$/;"	member	line:55	struct:app_net_head_pkg_t
-Rev3	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u32 Rev3;  \/\/4$/;"	member	line:56	struct:app_net_head_pkg_t
-app_net_head_pkg_t	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^} app_net_head_pkg_t;$/;"	typedef	line:58	typeref:struct:app_net_head_pkg_t
-_head_pkg	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define _head_pkg(/;"	macro	line:61
-NET_HEAD_SIZE	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define NET_HEAD_SIZE /;"	macro	line:77
-HEAD_PKG	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^#define HEAD_PKG(/;"	macro	line:79
-name	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    char name[16];$/;"	member	line:86	struct:__anon1
-passwd	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    char passwd[16];$/;"	member	line:87	struct:__anon1
-Rev1	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u32 Rev1;$/;"	member	line:88	struct:__anon1
-app_net_ctrl_login	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^}app_net_ctrl_login;$/;"	typedef	line:89	typeref:struct:__anon1
-state	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u16 state;$/;"	member	line:92	struct:__anon2
-Rev1	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u16 Rev1;$/;"	member	line:93	struct:__anon2
-app_net_ctrl_ack_login	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^}app_net_ctrl_ack_login;$/;"	typedef	line:94	typeref:struct:__anon2
-status	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^enum status{$/;"	enum	line:97
-APP_NET_LOGIN_SUCCESS	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    APP_NET_LOGIN_SUCCESS = 0,$/;"	enumerator	line:98	enum:status
-APP_NET_LOGIN_USER_FAILE	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    APP_NET_LOGIN_USER_FAILE,$/;"	enumerator	line:99	enum:status
-APP_NET_LOGIN_PASSWD_FAILE	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    APP_NET_LOGIN_PASSWD_FAILE,$/;"	enumerator	line:100	enum:status
-APP_NET_LOGIN_USER_LOCK	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    APP_NET_LOGIN_USER_LOCK,$/;"	enumerator	line:101	enum:status
-APP_NET_LOGIN_UNKNOW	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    APP_NET_LOGIN_UNKNOW,$/;"	enumerator	line:102	enum:status
-file_number	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u8 file_number;$/;"	member	line:107	struct:__anon3
-file	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    char file[20][64];$/;"	member	line:108	struct:__anon3
-Rev1	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u16 Rev1;$/;"	member	line:109	struct:__anon3
-Rev2	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u16 Rev2;$/;"	member	line:110	struct:__anon3
-app_net_file_list	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^} app_net_file_list;$/;"	typedef	line:111	typeref:struct:__anon3
-state	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u16 state;$/;"	member	line:115	struct:__anon4
-app_net_ctrl_ack_logout	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^}app_net_ctrl_ack_logout;$/;"	typedef	line:116	typeref:struct:__anon4
-log_out_statue	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^enum log_out_statue{$/;"	enum	line:117
-APP_NET_LOGOUT_OK	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    APP_NET_LOGOUT_OK = 0,$/;"	enumerator	line:118	enum:log_out_statue
-APP_NET_LOGOUT_ERROR	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    APP_NET_LOGOUT_ERROR,$/;"	enumerator	line:119	enum:log_out_statue
-path	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        char path[1024];$/;"	member	line:124	struct:__anon5
-Rev1	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u16 Rev1;$/;"	member	line:125	struct:__anon5
-app_net_file_path	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^}app_net_file_path;$/;"	typedef	line:126	typeref:struct:__anon5
-state	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u16 state;$/;"	member	line:130	struct:__anon6
-Rev1	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u16 Rev1;$/;"	member	line:131	struct:__anon6
-app_net_file_ack_path	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^}app_net_file_ack_path;$/;"	typedef	line:132	typeref:struct:__anon6
-filename	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        char filename[64];$/;"	member	line:137	struct:__anon7
-Rev1	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u32 Rev1;$/;"	member	line:138	struct:__anon7
-app_net_file_start_read	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^}app_net_file_start_read;$/;"	typedef	line:139	typeref:struct:__anon7
-file_len	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u32 file_len;$/;"	member	line:143	struct:__anon8
-app_net_file_ack_start_read	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^}app_net_file_ack_start_read;$/;"	typedef	line:144	typeref:struct:__anon8
-serial	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u32 serial;$/;"	member	line:148	struct:__anon9
-len	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u16 len;$/;"	member	line:149	struct:__anon9
-Rev	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u16 Rev;$/;"	member	line:150	struct:__anon9
-app_net_file_send	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^}app_net_file_send;$/;"	typedef	line:151	typeref:struct:__anon9
-serial	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u32 serial;$/;"	member	line:155	struct:__anon10
-Rev1	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u32 Rev1;$/;"	member	line:156	struct:__anon10
-app_net_file_ack_send	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^}app_net_file_ack_send;$/;"	typedef	line:157	typeref:struct:__anon10
-yy	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u16  yy;$/;"	member	line:161	struct:__anon11
-MM	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u8   MM;$/;"	member	line:162	struct:__anon11
-dd	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u8   dd;$/;"	member	line:163	struct:__anon11
-hh	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u8		hh;$/;"	member	line:164	struct:__anon11
-mm	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u8		mm;$/;"	member	line:165	struct:__anon11
-ss	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u8		ss;$/;"	member	line:166	struct:__anon11
-Rev1	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^    u8  Rev1;$/;"	member	line:167	struct:__anon11
-app_net_ctrl_heart	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^}app_net_ctrl_heart;$/;"	typedef	line:168	typeref:struct:__anon11
-state	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u8 state;$/;"	member	line:171	struct:__anon12
-Rev1	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u8 Rev1;$/;"	member	line:172	struct:__anon12
-Rev2	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^        u16 Rev2;$/;"	member	line:173	struct:__anon12
-app_net_ctrl_ack_heart	/Users/qianzhengyang/QClientSocket/net_protocol.h	/^}app_net_ctrl_ack_heart;$/;"	typedef	line:174	typeref:struct:__anon12
-QCLIENTSOCKET_GLOBAL_H	/Users/qianzhengyang/QClientSocket/qclientsocket_global.h	/^#define QCLIENTSOCKET_GLOBAL_H$/;"	macro	line:2
-QCLIENTSOCKETSHARED_EXPORT	/Users/qianzhengyang/QClientSocket/qclientsocket_global.h	/^#  define QCLIENTSOCKETSHARED_EXPORT /;"	macro	line:7
-QCLIENTSOCKETSHARED_EXPORT	/Users/qianzhengyang/QClientSocket/qclientsocket_global.h	/^#  define QCLIENTSOCKETSHARED_EXPORT /;"	macro	line:9
-QCLIENTSOCKET_H	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^#define QCLIENTSOCKET_H$/;"	macro	line:2
-PROTOCOL_BUFFER_LEN	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^#define PROTOCOL_BUFFER_LEN /;"	macro	line:13
-SEND_USER	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^#define SEND_USER /;"	macro	line:14
-RECV_USER	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^#define RECV_USER /;"	macro	line:15
-sub_cmd_link_t	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^struct sub_cmd_link_t$/;"	struct	line:18
-no	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^  int no;$/;"	member	line:20	struct:sub_cmd_link_t
-sub_cmd_type	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^  u32 sub_cmd_type;$/;"	member	line:21	struct:sub_cmd_link_t
-callback	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^  void (*callback)(char *data,u32 len);$/;"	member	line:22	struct:sub_cmd_link_t
-next	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^  struct sub_cmd_link_t *next;$/;"	member	line:23	struct:sub_cmd_link_t	typeref:struct:sub_cmd_link_t::sub_cmd_link_t
-cmd_link_t	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^struct cmd_link_t$/;"	struct	line:26
-no	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    int no;$/;"	member	line:28	struct:cmd_link_t
-cmd_type	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    u16 cmd_type;$/;"	member	line:29	struct:cmd_link_t
-subcmd_head	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    struct sub_cmd_link_t *subcmd_head;$/;"	member	line:30	struct:cmd_link_t	typeref:struct:cmd_link_t::sub_cmd_link_t
-next	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    struct cmd_link_t *next;$/;"	member	line:31	struct:cmd_link_t	typeref:struct:cmd_link_t::cmd_link_t
-QClientSocket	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^class QCLIENTSOCKETSHARED_EXPORT QClientSocket$/;"	class	line:34
-client_socket	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    int client_socket;$/;"	member	line:48	class:QClientSocket
-itimer_cnt	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    int itimer_cnt;$/;"	member	line:50	class:QClientSocket
-head_cmd_node	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    struct cmd_link_t *head_cmd_node;$/;"	member	line:51	class:QClientSocket	typeref:struct:QClientSocket::cmd_link_t
-send_pthread_id	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    pthread_t send_pthread_id;$/;"	member	line:58	class:QClientSocket
-recv_pthread_id	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    pthread_t recv_pthread_id;$/;"	member	line:59	class:QClientSocket
-treasmit_pthread_id	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    pthread_t treasmit_pthread_id;$/;"	member	line:60	class:QClientSocket
-timer_pthread_id	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    pthread_t timer_pthread_id;$/;"	member	line:61	class:QClientSocket
-quite	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    int quite;$/;"	member	line:63	class:QClientSocket
-send_sliding	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    QSlidingWindow *send_sliding;$/;"	member	line:76	class:QClientSocket
-recv_sliding	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    QSlidingWindow *recv_sliding;$/;"	member	line:77	class:QClientSocket
-send_consume	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    QSlidingWindowConsume *send_consume;$/;"	member	line:78	class:QClientSocket
-recv_consume	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    QSlidingWindowConsume *recv_consume;$/;"	member	line:79	class:QClientSocket
-send_buffer	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    char *send_buffer;$/;"	member	line:80	class:QClientSocket
-recv_buffer	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    char *recv_buffer;$/;"	member	line:81	class:QClientSocket
-frame	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    struct _frame_info_t *frame;$/;"	member	line:82	class:QClientSocket	typeref:struct:QClientSocket::_frame_info_t
-timer	/Users/qianzhengyang/QClientSocket/qclientsocket.h	/^    struct timeval timer;$/;"	member	line:84	class:QClientSocket	typeref:struct:QClientSocket::timeval
 QClientSocket	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^QClientSocket::QClientSocket()$/;"	function	line:4	class:QClientSocket	signature:()
 run_timer_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_timer_pthread(void *ptr)$/;"	function	line:58	class:QClientSocket	signature:(void *ptr)
-connect_server	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::connect_server(char *ip,int port)$/;"	function	line:115	class:QClientSocket	signature:(char *ip,int port)
-start	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start()$/;"	function	line:239	class:QClientSocket	signature:()
-set_protocol_ack_callback	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::set_protocol_ack_callback(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))$/;"	function	line:249	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))
-search_subcmd_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^struct sub_cmd_link_t *QClientSocket::search_subcmd_node(u16 cmd_type,u32 sub_cmd_type)$/;"	function	line:256	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type)
-append_cmd_link_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::append_cmd_link_node(u16 cmd_type)$/;"	function	line:281	class:QClientSocket	signature:(u16 cmd_type)
-search_subcmd_head	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^struct sub_cmd_link_t *QClientSocket::search_subcmd_head(u16 cmd_type)$/;"	function	line:319	class:QClientSocket	signature:(u16 cmd_type)
-append_subcmd_link_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::append_subcmd_link_node(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))$/;"	function	line:343	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))
-send_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::send_protocol(u16 cmd_type,u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:379	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,char *data,u32 len)
-do_ctrl_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_ctrl_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:408	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
-do_file_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_file_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:442	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
-do_aid_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_aid_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:471	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
-do_vid_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_vid_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:478	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
-run_send_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_send_pthread(void *ptr)$/;"	function	line:488	class:QClientSocket	signature:(void *ptr)
-run_recv_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_recv_pthread(void *ptr)$/;"	function	line:516	class:QClientSocket	signature:(void *ptr)
-run_treasmit_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_treasmit_pthread(void *ptr)$/;"	function	line:544	class:QClientSocket	signature:(void *ptr)
-WRITE	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::WRITE(int sk, char *buf, int len)$/;"	function	line:577	class:QClientSocket	signature:(int sk, char *buf, int len)
-READ	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::READ(int sk, char *buf, int len)$/;"	function	line:597	class:QClientSocket	signature:(int sk, char *buf, int len)
-start_recv	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_recv()$/;"	function	line:620	class:QClientSocket	signature:()
-start_send	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_send()$/;"	function	line:628	class:QClientSocket	signature:()
-start_treasmit	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_treasmit()$/;"	function	line:636	class:QClientSocket	signature:()
-start_heart	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_heart()$/;"	function	line:647	class:QClientSocket	signature:()
-stop_heart	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::stop_heart()$/;"	function	line:661	class:QClientSocket	signature:()
+connect_server	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::connect_server(char *ip,int port)$/;"	function	line:96	class:QClientSocket	signature:(char *ip,int port)
+start	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start()$/;"	function	line:220	class:QClientSocket	signature:()
+set_protocol_ack_callback	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::set_protocol_ack_callback(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))$/;"	function	line:230	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))
+search_subcmd_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^struct sub_cmd_link_t *QClientSocket::search_subcmd_node(u16 cmd_type,u32 sub_cmd_type)$/;"	function	line:237	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type)
+append_cmd_link_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::append_cmd_link_node(u16 cmd_type)$/;"	function	line:262	class:QClientSocket	signature:(u16 cmd_type)
+search_subcmd_head	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^struct sub_cmd_link_t *QClientSocket::search_subcmd_head(u16 cmd_type)$/;"	function	line:300	class:QClientSocket	signature:(u16 cmd_type)
+append_subcmd_link_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::append_subcmd_link_node(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))$/;"	function	line:324	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))
+send_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::send_protocol(u16 cmd_type,u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:360	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,char *data,u32 len)
+do_ctrl_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_ctrl_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:389	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+do_file_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_file_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:423	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+do_aid_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_aid_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:452	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+do_vid_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_vid_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:459	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+run_send_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_send_pthread(void *ptr)$/;"	function	line:469	class:QClientSocket	signature:(void *ptr)
+run_recv_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_recv_pthread(void *ptr)$/;"	function	line:497	class:QClientSocket	signature:(void *ptr)
+run_treasmit_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_treasmit_pthread(void *ptr)$/;"	function	line:525	class:QClientSocket	signature:(void *ptr)
+WRITE	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::WRITE(int sk, char *buf, int len)$/;"	function	line:558	class:QClientSocket	signature:(int sk, char *buf, int len)
+READ	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::READ(int sk, char *buf, int len)$/;"	function	line:578	class:QClientSocket	signature:(int sk, char *buf, int len)
+start_recv	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_recv()$/;"	function	line:601	class:QClientSocket	signature:()
+start_send	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_send()$/;"	function	line:609	class:QClientSocket	signature:()
+start_treasmit	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_treasmit()$/;"	function	line:617	class:QClientSocket	signature:()
+start_heart	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_heart()$/;"	function	line:628	class:QClientSocket	signature:()
+stop_heart	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::stop_heart()$/;"	function	line:642	class:QClientSocket	signature:()
+QClientSocket	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^QClientSocket::QClientSocket()$/;"	function	line:4	class:QClientSocket	signature:()
+run_timer_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_timer_pthread(void *ptr)$/;"	function	line:58	class:QClientSocket	signature:(void *ptr)
+connect_server	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::connect_server(char *ip,int port)$/;"	function	line:96	class:QClientSocket	signature:(char *ip,int port)
+start	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start()$/;"	function	line:220	class:QClientSocket	signature:()
+set_protocol_ack_callback	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::set_protocol_ack_callback(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))$/;"	function	line:230	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))
+search_subcmd_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^struct sub_cmd_link_t *QClientSocket::search_subcmd_node(u16 cmd_type,u32 sub_cmd_type)$/;"	function	line:237	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type)
+append_cmd_link_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::append_cmd_link_node(u16 cmd_type)$/;"	function	line:262	class:QClientSocket	signature:(u16 cmd_type)
+search_subcmd_head	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^struct sub_cmd_link_t *QClientSocket::search_subcmd_head(u16 cmd_type)$/;"	function	line:300	class:QClientSocket	signature:(u16 cmd_type)
+append_subcmd_link_node	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::append_subcmd_link_node(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))$/;"	function	line:324	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len))
+send_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::send_protocol(u16 cmd_type,u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:360	class:QClientSocket	signature:(u16 cmd_type,u32 sub_cmd_type,char *data,u32 len)
+do_ctrl_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_ctrl_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:389	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+do_file_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_file_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:423	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+do_aid_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_aid_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:452	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+do_vid_protocol	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::do_vid_protocol(u32 sub_cmd_type,char *data,u32 len)$/;"	function	line:459	class:QClientSocket	signature:(u32 sub_cmd_type,char *data,u32 len)
+run_send_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_send_pthread(void *ptr)$/;"	function	line:469	class:QClientSocket	signature:(void *ptr)
+run_recv_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_recv_pthread(void *ptr)$/;"	function	line:497	class:QClientSocket	signature:(void *ptr)
+run_treasmit_pthread	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void *QClientSocket::run_treasmit_pthread(void *ptr)$/;"	function	line:525	class:QClientSocket	signature:(void *ptr)
+WRITE	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::WRITE(int sk, char *buf, int len)$/;"	function	line:558	class:QClientSocket	signature:(int sk, char *buf, int len)
+READ	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^int QClientSocket::READ(int sk, char *buf, int len)$/;"	function	line:578	class:QClientSocket	signature:(int sk, char *buf, int len)
+start_recv	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_recv()$/;"	function	line:601	class:QClientSocket	signature:()
+start_send	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_send()$/;"	function	line:609	class:QClientSocket	signature:()
+start_treasmit	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_treasmit()$/;"	function	line:617	class:QClientSocket	signature:()
+start_heart	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::start_heart()$/;"	function	line:628	class:QClientSocket	signature:()
+stop_heart	/Users/qianzhengyang/QClientSocket/qclientsocket.cpp	/^void QClientSocket::stop_heart()$/;"	function	line:642	class:QClientSocket	signature:()

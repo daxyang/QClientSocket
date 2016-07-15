@@ -16,6 +16,17 @@ SOURCES += qclientsocket.cpp
 HEADERS += qclientsocket.h\
         qclientsocket_global.h \
     net_protocol.h
+#ubuntu
+unix:!macx {
+INCLUDEPATH += ../QSlidingWindow
+INCLUDEPATH += ../QSlidingWindowConsume
+
+LIBS        += -L/usr/local/linux_lib/lib -lQSlidingWindow -lQSlidingWindowConsume
+}
+unix:!macx {
+    target.path = /usr/local/linux_lib/lib
+    INSTALLS += target
+}
 
 
 unix:macx {

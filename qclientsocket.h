@@ -39,8 +39,6 @@ public:
     int connect_server(char *ip,int port);  //连接到服务器
     void set_protocol_ack_callback(u16 cmd_type,u32 sub_cmd_type,void (*function)(char *data,u32 len)); //添加协议处理函数
     void send_protocol(u16 cmd_type,u32 sub_cmd_type,char *data,u32 len);
-    void start_heart();
-    void stop_heart();
     void start();
 
 private:
@@ -58,14 +56,13 @@ private:
     pthread_t send_pthread_id;
     pthread_t recv_pthread_id;
     pthread_t treasmit_pthread_id;
-    pthread_t timer_pthread_id;
+
 
     int quite;
 
     static void *run_send_pthread(void *ptr);
     static void *run_recv_pthread(void *ptr);
     static void *run_treasmit_pthread(void *ptr);
-    static void *run_timer_pthread(void *ptr);
 
     void start_send();
     void start_recv();
