@@ -39,6 +39,53 @@ typedef  unsigned long long u64;
 #define NET_FILE_START       0x0002
 #define NET_FILE_PATH        0x0003
 #define NET_FILE_SEND        0x0004
+#define NET_FILE_NAME        0x0005
+
+/*
+ * 定长读、写数据
+ */
+int WRITE(int sk, char *buf, int len)
+{
+    int ret;
+    int left = len;
+    int pos = 0;
+
+    while (left > 0)
+    {
+        if((ret = send(sk,&buf[pos], left,0))<0)
+        {
+            printf("write data failed!\n");
+            return -1;
+        }
+
+        left -= ret;
+        pos += ret;
+    }
+
+    return 0;
+}
+int READ(int sk, char *buf, int len)
+{
+    int ret;
+    int left = len;
+    int pos = 0;
+
+    while (left > 0)
+    {
+        if((ret = recv(sk,&buf[pos], left,0))<0)
+        {
+            printf("read data failed!ret,left: %d,%d,%s\n",ret,left,strerror(errno));
+            return -1;
+        }
+
+        left -= ret;
+        pos += ret;
+    }
+
+    return 0;
+}
+
+
 
 
 typedef struct app_net_head_pkg_t
@@ -134,7 +181,7 @@ typedef struct
 
 typedef struct
 {
-        char filename[64];
+        char filename[1024];
         u32 Rev1;
 }app_net_file_start_read;
 
@@ -172,5 +219,18 @@ typedef struct
         u8 Rev1;
         u16 Rev2;
 }app_net_ctrl_ack_heart;
+
+typedef struct
+{
+		char filename[64];
+		u32 Rev1;
+}app_net_file_set_fileame;
+
+typedef struct
+{
+    u16 state;
+	  u16 Rev1;
+}app_net_file_ack_set_filename;
+
 
 #endif // NET_PROROCAL

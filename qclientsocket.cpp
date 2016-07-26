@@ -547,49 +547,7 @@ void *QClientSocket::run_treasmit_pthread(void *ptr)
   }
 
 }
-/*
- * 定长读、写数据
- */
-int QClientSocket::WRITE(int sk, char *buf, int len)
-{
-    int ret;
-    int left = len;
-    int pos = 0;
 
-    while (left > 0)
-    {
-        if((ret = send(sk,&buf[pos], left,0))<0)
-        {
-            printf("write data failed!\n");
-            return -1;
-        }
-
-        left -= ret;
-        pos += ret;
-    }
-
-    return 0;
-}
-int QClientSocket::READ(int sk, char *buf, int len)
-{
-    int ret;
-    int left = len;
-    int pos = 0;
-
-    while (left > 0)
-    {
-        if((ret = recv(sk,&buf[pos], left,0))<0)
-        {
-            printf("read data failed!ret,left: %d,%d,%s\n",ret,left,strerror(errno));
-            return -1;
-        }
-
-        left -= ret;
-        pos += ret;
-    }
-
-    return 0;
-}
 /*
  * 线程启动函数
  */
